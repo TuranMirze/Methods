@@ -1,0 +1,22 @@
+    static void Main(string[] args)
+    {
+        string text = "Fatih Sultan Mehmet";
+        FirstLetter(text);
+
+    }
+
+    static void FirstLetter(string text)
+    {
+        for (int i = 0; i < text.Length; i++)
+        {
+            if (i == 0 && text[i + 1] != ' ')
+            {
+                Console.Write(text[i]);
+            }
+            if (i > 0 && text[i] == ' ' && text[i + 1] != ' ')
+            {
+                Console.Write(text[i + 1]);
+            }
+        }
+    }
+}

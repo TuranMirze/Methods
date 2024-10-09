@@ -1,0 +1,22 @@
+    static void Main(string[] args)
+    {
+        string name = "Mustafa Kemal Atatürk";
+
+        string result = Space(name);
+        Console.WriteLine(result);
+    }
+
+
+    static string Space(string name)
+    {
+        string yeni = "";
+        for (int i = 0; i < name.Length; i++)
+        {
+            if (name[i] != ' ')
+            {
+                yeni += name[i];
+            }
+        }
+        return yeni;
+    }
+}

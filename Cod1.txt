@@ -1,0 +1,27 @@
+namespace ConsoleApp5;
+using System;
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int[] array = { 42, 35, 46, 24 };
+        int eded = Array(array);
+        Console.WriteLine(eded);
+    }
+
+
+    static int Array(int[] array)
+    {
+        int min = array[0];
+        for (int i = 1; i < array.Length; i++)
+        {
+            if (array[i] < min)
+            {
+                min = array[i];
+            }
+        }
+
+        return min;
+    }
+
+}
